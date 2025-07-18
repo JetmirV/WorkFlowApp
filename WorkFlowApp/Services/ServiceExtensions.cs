@@ -88,6 +88,7 @@ public static class ServiceExtensions
 		services.AddScoped<IUserService, UserService>();
 		services.AddScoped<IEncryptionService, EncryptionService>();
 		services.AddScoped<IWorkflowService, WorkflowService>();
+		services.AddScoped<IDataAggregationService, DataAggregationService>();
 
 		// nodes
 		services.AddSingleton<NodeFactory>();

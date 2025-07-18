@@ -8,6 +8,7 @@ public interface IDataRepo
 	void AddRefreshToken(RefreshToken token);
 	void CreateUser(User user);
 	void DeleteRefreshTokenById(long id);
+	List<SalesRecord> GetAllSalesRecords();
 	List<Workflow> GetAllWorkflows();
 	List<WorkflowAttachment> GetAttachmentsByWorkflowId(string workflowId);
 	List<Node> GetNodeByWorkflowIdAndOrder(string id, int v);

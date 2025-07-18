@@ -14,6 +14,8 @@ public class DataRepo : IDataRepo
 	private static readonly List<WorkflowAttachment> WorkflowAttachments = InMemoryData.WorkflowAttachments;
 	private static readonly List<Role> Roles = InMemoryData.Roles;
 
+	private static readonly List<SalesRecord> SalesRecords = InMemoryData.SalesRecords;
+
 	public DataRepo()
 	{
 		InMemoryData.Initialize();
@@ -159,6 +161,15 @@ public class DataRepo : IDataRepo
 	public List<WorkflowAttachment> GetAttachmentsByWorkflowId(string workflowId)
 	{
 		return WorkflowAttachments.Where(a => a.WorkFlowId == workflowId).ToList();
+	}
+
+	#endregion
+
+	#region Sales
+
+	public List<SalesRecord> GetAllSalesRecords()
+	{
+		return SalesRecords;
 	}
 
 	#endregion

@@ -13,6 +13,8 @@ public static class InMemoryData
 		LoadWorkflowContent();
 
 		LoadRoles();
+
+		LoadSales();
     }	
 
 	public static void Clear()
@@ -28,6 +30,9 @@ public static class InMemoryData
     public static List<WorkflowTask> WorkflowTasks { get; set; } = new List<WorkflowTask>();
     public static List<WorkflowAttachment> WorkflowAttachments { get; set; } = new List<WorkflowAttachment>();
     public static List<Role> Roles { get; set; } = new List<Role>();
+
+
+    public static List<SalesRecord> SalesRecords { get; set; } = new List<SalesRecord>();
 
     private static void LoadWorkflowdata()
     {
@@ -98,7 +103,6 @@ public static class InMemoryData
 		if (!File.Exists(jsonPath))
 			throw new FileNotFoundException($"Could not find workflows file at '{jsonPath}'");
 
-		// c) read and deserialize  
 		var json = File.ReadAllText(jsonPath);
 
 		var data = JsonConvert.DeserializeObject<List<Role>>(json)
@@ -107,6 +111,24 @@ public static class InMemoryData
 		if (Roles.Count == 0)
 		{
 			Roles.AddRange(data);
+		}
+	}
+
+	private static void LoadSales()
+	{
+		var baseDir = AppContext.BaseDirectory;
+		var jsonPath = Path.Combine(baseDir, "Data\\RawData", "sales_dummy_data 1.json");
+		
+		if (!File.Exists(jsonPath))
+			throw new FileNotFoundException($"Could not find sales file at '{jsonPath}'");
+		
+		var json = File.ReadAllText(jsonPath);
+		var data = JsonConvert.DeserializeObject<List<SalesRecord>>(json)
+			   ?? new List<SalesRecord>();
+
+		if (SalesRecords.Count == 0)
+		{
+			SalesRecords.AddRange(data);
 		}
 	}
 
