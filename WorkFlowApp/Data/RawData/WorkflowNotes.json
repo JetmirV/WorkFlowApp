@@ -1,0 +1,12 @@
+[
+  {
+    "type": "note",
+    "workFlowId": "c37d6f2a-2a51-4e6d-b1f9-f9d3e5a4d456",
+    "text": "Order #12345 validation passed."
+  },
+  {
+    "type": "note",
+    "workFlowId": "c37d6f2a-2a51-4e6d-b1f9-f9d3e5a4d456",
+    "text": "Payment authorisation pending."
+  }
+]

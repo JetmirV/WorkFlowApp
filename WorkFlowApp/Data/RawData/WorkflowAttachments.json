@@ -1,0 +1,52 @@
+[
+  {
+    "type": "attachment",
+    "workFlowId": "c37d6f2a-2a51-4e6d-b1f9-f9d3e5a4d456",
+    "url": "https://example.com/invoices/12345.pdf"
+  },
+  {
+    "type": "attachment",
+    "workFlowId": "c37d6f2a-2a51-4e6d-b1f9-f9d3e5a4d456",
+    "url": "https://example.com/screenshots/payment-failure.png"
+  },
+  {
+    "type": "attachment",
+    "workFlowId": "c37d6f2a-2a51-4e6d-b1f9-f9d3e5a4d456",
+    "url": "https://example.com/logs/payment-2025-07-14.log"
+  },
+  {
+    "type": "attachment",
+    "workFlowId": "d48e7f3b-3b62-4f7e-c2a0-0ab4f6b5e789",
+    "url": "https://example.com/logs/cleanup-2025-05-20.zip"
+  },
+  {
+    "type": "attachment",
+    "workFlowId": "d48e7f3b-3b62-4f7e-c2a0-0ab4f6b5e789",
+    "url": "https://example.com/reports/stale-records.csv"
+  },
+  {
+    "type": "attachment",
+    "workFlowId": "d48e7f3b-3b62-4f7e-c2a0-0ab4f6b5e789",
+    "url": "https://example.com/archives/logs-2025-04.zip"
+  },
+  {
+    "type": "attachment",
+    "workFlowId": "d48e7f3b-3b62-4f7e-c2a0-0ab4f6b5e789",
+    "url": "https://example.com/archives/logs-2025-03.zip"
+  },
+  {
+    "type": "attachment",
+    "workFlowId": "d48e7f3b-3b62-4f7e-c2a0-0ab4f6b5e789",
+    "url": "https://example.com/archives/logs-2025-02.zip"
+  },
+  {
+    "type": "attachment",
+    "workFlowId": "bf5e3a9c-1f4b-4d8a-9c2a-e6f4b8b7c123",
+    "url": "https://example.com/designs/welcome-email.png"
+  },
+  {
+    "type": "attachment",
+    "workFlowId": "bf5e3a9c-1f4b-4d8a-9c2a-e6f4b8b7c123",
+    "url": "https://example.com/templates/email-template.html"
+  }
+]

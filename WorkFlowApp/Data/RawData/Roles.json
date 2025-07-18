@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "scope":  "write",
+    "name": "Admin"
+  },
+  {
+    "id": "2",
+    "scope": "read",
+    "name": "Analyst"
+  },
+  {
+    "id": "3",
+    "scope": "read",
+    "name": "Basic"
+  }
+]

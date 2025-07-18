@@ -1,0 +1,86 @@
+[
+  {
+    "id": "bf5e3a9c-1f4b-4d8a-9c2a-e6f4b8b7c123",
+    "name": "User Registration Workflow",
+    "description": "Handles signup, checks eligibility, formats welcome message, and stores it.",
+    "createdAt": "2025-06-10T09:15:00+02:00",
+    "nodes": [
+      {
+        "id": "502e4997-9aba-11ef-8210-678e4a975fe5",
+        "type": "Init",
+        "order": 1
+      },
+      {
+        "id": "613f5a2d-9aba-11ef-8210-678e4a975fe5",
+        "type": "Condition",
+        "order": 2
+      },
+      {
+        "id": "72406b3e-9aba-11ef-8210-678e4a975fe5",
+        "type": "ModifyMessage",
+        "order": 3
+      },
+      {
+        "id": "83517d4f-9aba-11ef-8210-678e4a975fe5",
+        "type": "StoreMessage",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "c37d6f2a-2a51-4e6d-b1f9-f9d3e5a4d456",
+    "name": "Order Processing Workflow",
+    "description": "Initializes order, validates stock/payment, customizes confirmation, and stores order record.",
+    "createdAt": "2025-07-01T14:45:00+02:00",
+    "nodes": [
+      {
+        "id": "83417c4f-9aba-11ef-8210-678e4a975fe5",
+        "type": "Init",
+        "order": 1
+      },
+      {
+        "id": "94528d60-9aba-11ef-8210-678e4a975fe5",
+        "type": "Condition",
+        "order": 2
+      },
+      {
+        "id": "a5639e71-9aba-11ef-8210-678e4a975fe5",
+        "type": "ModifyMessage",
+        "order": 2
+      },
+      {
+        "id": "b674af82-9aba-11ef-8210-678e4a975fe5",
+        "type": "StoreMessage",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "d48e7f3b-3b62-4f7e-c2a0-0ab4f6b5e789",
+    "name": "Data Cleanup Workflow",
+    "description": "Starts cleanup, flags records for deletion, tags for archive, and persists changes.",
+    "createdAt": "2025-05-20T08:30:00+02:00",
+    "nodes": [
+      {
+        "id": "c785bf93-9aba-11ef-8210-678e4a975fe5",
+        "type": "Init",
+        "order": 1
+      },
+      {
+        "id": "d896d0a4-9aba-11ef-8210-678e4a975fe5",
+        "type": "Condition",
+        "order": 2
+      },
+      {
+        "id": "e9a7e1b5-9aba-11ef-8210-678e4a975fe5",
+        "type": "StoreMessage",
+        "order": 2
+      },
+      {
+        "id": "fab8f2c6-9aba-11ef-8210-678e4a975fe5",
+        "type": "ModifyMessage",
+        "order": 3
+      }
+    ]
+  }
+]
